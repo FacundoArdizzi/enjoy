@@ -7,10 +7,12 @@ import {
   Form,
 } from '../components'
 import { Box } from '@chakra-ui/react'
+import { NavBar, Footer } from '../components'
 import MobileSlider from '../components/mobileSlider/MobileSlider'
 
 const Landing = () => (
   <Box>
+    <NavBar />
     <Header />
     <Box zIndex='999' position='relative' top={{ base: '0vh', md: '-15vh'}}>
       <Benefits />
@@ -23,6 +25,7 @@ const Landing = () => (
       <MobileSlider />
     </Box>
     <Form />
+    <Footer />
   </Box>
 )
 

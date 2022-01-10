@@ -1,19 +1,20 @@
 import React from 'react'
-import { NavBar, Footer } from './components'
-import Landing from './views/Landing'
-import Opinions from './views/Opinions'
 import { ChakraProvider } from '@chakra-ui/react'
 import theme from './theme'
 import '@fontsource/raleway'
-import { Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+import Landing from './views/Landing'
+import Opinions from './views/Opinions'
 
 const App = () => {
   return (
     <ChakraProvider theme={theme}>
-      <Route path='/home' component={Landing} />
+      <Routes>
+        <Route path='/' element={<Landing />} />
+        <Route path='/opiniones' element={<Opinions />} />
+      </Routes>
     </ChakraProvider>
   );
 }
 
 export default App;
-

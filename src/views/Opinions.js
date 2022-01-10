@@ -2,6 +2,7 @@ import { Stack, Heading, Link, Button } from '@chakra-ui/react'
 import React from 'react'
 import opinions from '../constants/opinions'
 import MobileSliderItem from '../components/mobileSlider/MobileSliderItem'
+import { Link as ReachLink } from 'react-router-dom'
 
 const Opinions = () => {
   return (
@@ -21,7 +22,7 @@ const Opinions = () => {
         <MobileSliderItem opinions={opinions.slice(3,6)}/>
         <MobileSliderItem opinions={opinions.slice(6,9)}/>
       </Stack>
-      <Link display='hidden' to='/'>
+      <Link display='hidden' as={ReachLink} to='/'>
         <Button 
           mt={3} 
           variant='text' 
