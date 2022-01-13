@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Stack } from '@chakra-ui/react'
-import headerBg from '../../assets/header-bg.jpg'
+import headerBg from '../../assets/bgCompressed.jpg'
 import HeaderTitle from './HeaderTitle'
 import Border from './Border'
 import HeaderForm from './HeaderForm'
