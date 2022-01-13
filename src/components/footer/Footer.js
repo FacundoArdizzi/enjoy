@@ -28,9 +28,10 @@ const Footer = () => (
         mt={{ base: '5vh', md: '' }}
       >Certificaciones Oficiales</Heading>
       <Stack>
-        <Link color='#3366BB' as={ReachLink} to='/first-certificate' >First Certificate</Link>
-        <Link color='#3366BB' as={ReachLink} to='/toefl' >TOEFL</Link>
-        <Link color='#3366BB' as={ReachLink} to='/toeic' >TOEIC</Link>
+        <Link w='fit-content' color='#3366BB' as={ReachLink} to='/first-certificate'>First Certificate</Link>
+        <Link w='fit-content' color='#3366BB' as={ReachLink} to='/toefl'>TOEFL</Link>
+        <Link w='fit-content' color='#3366BB' as={ReachLink} to='/toeic'>TOEIC</Link>
+        <Link w='fit-content' color='#3366BB' as={ReachLink} to='/ielts'>IELTS</Link>
       </Stack>
     </Stack>
   </Stack>
