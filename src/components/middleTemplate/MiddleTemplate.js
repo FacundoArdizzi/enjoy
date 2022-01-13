@@ -1,6 +1,7 @@
 import { Box, Heading, Icon, Link, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 import { GrCertificate } from 'react-icons/gr'
+import { Link as ReachLink } from 'react-router-dom'
 
 const MiddleTemplate = () => (
   <Stack 
@@ -33,7 +34,7 @@ const MiddleTemplate = () => (
         mt='3vh'
         mb='1vh'
         textAlign='justify'
-      >No hay problema, ayudamos a miles de alumnos a preparar sus exámenes de <Link color='lightBlue'>First Certificate</Link>, <Link color='lightBlue'>TOEFL</Link>, <Link color='lightBlue'>TOEIC</Link>... Nuestro idioma es el inglés y podemos ayudarte a conseguir lo que te propongas.
+      >No hay problema, ayudamos a miles de alumnos a preparar sus exámenes de <Link color='lightBlue' as={ReachLink} to='/first-certificate' >First Certificate</Link>, <Link color='lightBlue' as={ReachLink} to='/toefl'>TOEFL</Link>, <Link color='lightBlue' as={ReachLink} to='/toeic'>TOEIC</Link>... Nuestro idioma es el inglés y podemos ayudarte a conseguir lo que te propongas.
       </Text>
       <Text 
         mx='auto'

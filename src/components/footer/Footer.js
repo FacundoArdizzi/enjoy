@@ -1,6 +1,7 @@
 import { Stack, Icon, Heading, Link } from '@chakra-ui/react'
 import React from 'react'
 import { FaGraduationCap } from 'react-icons/fa'
+import { Link as ReachLink } from 'react-router-dom'
 
 const Footer = () => (
   <Stack 
@@ -27,9 +28,9 @@ const Footer = () => (
         mt={{ base: '5vh', md: '' }}
       >Certificaciones Oficiales</Heading>
       <Stack>
-        <Link color='#3366BB'>First Certificate</Link>
-        <Link color='#3366BB'>TOEFL</Link>
-        <Link color='#3366BB' >TOEIC</Link>
+        <Link color='#3366BB' as={ReachLink} to='/first-certificate' >First Certificate</Link>
+        <Link color='#3366BB' as={ReachLink} to='/toefl' >TOEFL</Link>
+        <Link color='#3366BB' as={ReachLink} to='/toeic' >TOEIC</Link>
       </Stack>
     </Stack>
   </Stack>

@@ -1,6 +1,7 @@
 import { Box, Heading, Icon, Stack, Link } from '@chakra-ui/react'
 import React from 'react'
 import { FaWhatsapp } from 'react-icons/fa'
+import { Link as ReachLink } from 'react-router-dom'
 
 const NavBar = () => (
   <Stack 
@@ -16,7 +17,15 @@ const NavBar = () => (
     zIndex='9999'
   >
     <Box>
-      <Heading fontWeight='semi-bold'>Enjoy!</Heading>
+      <Link 
+        display='hidden' 
+        as={ReachLink} 
+        to='/' 
+        _hover={{ outline: 'none', textDecoration: 'none' }}
+        _focus={{ outline: 'none' }}
+      >
+        <Heading fontWeight='semi-bold'>Enjoy!</Heading>
+      </Link>
     </Box>
     <Link 
       display='hidden'
