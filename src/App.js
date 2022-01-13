@@ -4,6 +4,7 @@ import theme from './theme'
 import '@fontsource/raleway'
 import { Routes, Route } from 'react-router-dom'
 import { Landing, Opinions, FirstCertificate, TOEFL, TOEIC, IELTS } from './views'
+
 const App = () => {
   return (
     <ChakraProvider theme={theme}>

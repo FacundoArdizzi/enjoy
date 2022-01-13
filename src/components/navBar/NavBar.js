@@ -6,6 +6,7 @@ import { Link as ReachLink } from 'react-router-dom'
 const NavBar = () => (
   <Stack 
     position='fixed' 
+    top='0'
     direction='row' 
     h='10vh'
     w='100vw' 

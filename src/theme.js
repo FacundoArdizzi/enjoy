@@ -15,7 +15,8 @@ const theme = extendTheme({
           borderRadius: 'xl',
           marginX: '.2vw',
           width: '.5vw',
-        }
+        },
+        paddingTop: '10vh',
       }
     },
   },

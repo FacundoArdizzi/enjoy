@@ -9,7 +9,7 @@ const Landing = () => {
     <Box>
       <NavBar />
       <Header />
-      <Box zIndex="999" position="relative" top={{ base: "0vh", md: "-15vh" }}>
+      <Box position="relative" top={{ base: "0vh", md: "-15vh" }}>
         <Benefits />
       </Box>
       <MiddleTemplate />

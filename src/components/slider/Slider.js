@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Stack, IconButton, Heading, Box } from '@chakra-ui/react'
+import { Stack, IconButton, Heading } from '@chakra-ui/react'
 import { AiOutlineRight, AiOutlineLeft } from 'react-icons/ai'
 import opinions from '../../constants/opinions'
 import SliderItem from './SliderItem'
