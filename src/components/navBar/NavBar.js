@@ -2,6 +2,7 @@ import { Box, Heading, Icon, Stack, Link } from '@chakra-ui/react'
 import React from 'react'
 import { FaWhatsapp } from 'react-icons/fa'
 import { Link as ReachLink } from 'react-router-dom'
+import styles from './NavBar.module.css'
 
 const NavBar = () => (
   <Stack 
@@ -17,7 +18,7 @@ const NavBar = () => (
     justifyContent='space-between'
     zIndex='9999'
   >
-    <Box>
+    <Box className={styles.animated}>
       <Link 
         display='hidden' 
         as={ReachLink} 
@@ -29,6 +30,7 @@ const NavBar = () => (
       </Link>
     </Box>
     <Link 
+      className={styles.animated}
       display='hidden'
       href='https://api.whatsapp.com/send?phone=34636213876&text=Quisiera%20coordinar%20la%20primer%20clase%20gratis!%20'
     > 

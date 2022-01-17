@@ -1,0 +1,14 @@
+.animated {
+  animation-name: animated;
+  animation-duration: 2.5s;
+  animation-timing-function: ease;
+}
+
+@keyframes animated {
+  0%{
+    margin-top: -10vh;
+  }
+  100% {
+    margin-top: 0;
+  }
+}

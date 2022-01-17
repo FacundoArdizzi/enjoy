@@ -134,8 +134,8 @@ const HeaderForm = () => {
             transition='all .4s ease'
             _hover={{ 
               base: { color: 'yellow', borderColor: 'yellow' }, 
-              md: {bg: 'transparent', color: 'orange'
-            }}}
+              md: { color: 'orange', borderColor: 'orange', bg: 'transparent'}
+            }}
             _focus={{ outline: 'none', color: 'white' }}
             isLoading={isLoading}
           >Enviar</Button>
