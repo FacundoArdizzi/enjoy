@@ -7,7 +7,8 @@ const Card = ({ img, name, location, opinion }) => {
   return (
     <Stack 
       minW='15vw'
-      h='65vh'
+      h='75vh'
+      minH='fit-content'
       alignItems='center'
       borderRadius='md'
       p={4}
@@ -19,18 +20,18 @@ const Card = ({ img, name, location, opinion }) => {
         borderColor='lightBlue'
         borderRadius='full'
         overflow='hidden' 
-        w='10vw' 
-        h='10vw'
         bg='lightBlue'
+        h='8rem'
+        w='8rem'
       >
-        <Img src={img} verticalAlign='top' m='0'/>
+        <Img src={img} verticalAlign='top' m='0' />
       </Box>
       <Text fontWeight='bold'>{name}</Text>
       <Stack direction='row' alignItems='center' w='100%' textAlign='left'>
         <Icon as={GoLocation} color='red' />
         <Text display='inline'>{location}</Text>
       </Stack>
-      <Stack pt={4}>
+      <Stack pt={4} minH='fit-content'>
         <Box w='30%' h='2px' bg='gray' mx='auto'></Box>
         <Text>{opinion}</Text>
       </Stack>

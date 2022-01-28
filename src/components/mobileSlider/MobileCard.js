@@ -4,16 +4,15 @@ import PropTypes from 'prop-types'
 import { GoLocation } from 'react-icons/go'
 
 
-const MobileCard = ({ img, name, location, opinion, revert }) => {
+const MobileCard = ({ img, name, location, opinion }) => {
   return (
-    <Stack w='100%' alignItems={revert ? 'flex-end' : ''} minH='fit-content' >
+    <Stack w='98%' mb='2vh' minH='fit-content' >
       <Stack 
-        w='95%' 
+        w='95%'
         bg='white'
-        borderRadius='md' 
-        boxShadow='lg' 
-        p={4} 
-        alignItems={revert ? 'revert' : 'initial'}
+        borderRadius='md'
+        boxShadow='lg'
+        p={4}
       >
         <Stack direction='row' divider={<StackDivider borderColor='gray.200' />}>
           <Box 

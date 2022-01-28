@@ -1,10 +1,11 @@
-import { Stack, Heading, Button, Link } from '@chakra-ui/react'
-import React from 'react'
+import { Stack, Heading, Button, Collapse, Icon } from '@chakra-ui/react'
+import { HiChevronDown, HiChevronUp } from 'react-icons/hi'
+import React, { useState } from 'react'
 import opinions from '../../constants/opinions'
-import MobileSliderItem from './MobileSliderItem'
-import { Link as ReachLink } from 'react-router-dom'
+import MobileCard from './MobileCard'
 
 const MobileSlider = () => {
+  const [show, setShow] = useState(false)
   return (
     <Stack 
       w='100%'
@@ -17,21 +18,25 @@ const MobileSlider = () => {
         textAlign='center'
         fontSize='1.5rem'
       >Conoce lo que nuestros clientes piensan de nosotros</Heading>
-      <Stack px={4} pb={4} w='100%' minH='fit-content'>
-        <MobileSliderItem opinions={opinions.slice(0,3)}/>
-      </Stack>
-      <Link display='hidden' as={ReachLink} to='/opiniones'>
-        <Button 
-          mt={3} 
-          variant='text' 
-          textTransform='uppercase' 
-          fontWeight='bold' 
-          _hover={{ textDecoration: 'underline', color: 'orange' }}
+      <Stack justifyContent='center'>
+        <Collapse in={show} px={4} pb={4} w='100%' startingHeight='30vh'>
+          {opinions.map(c => <MobileCard 
+            key={c.id}
+            img={c.img}
+            name={c.name}
+            location={c.location}
+            opinion={c.opinion}
+          />)}
+        </Collapse>
+        <Button
+          onClick={() => setShow(!show)}
+          bg='transparent'
+          color='orange'
           _focus={{ outline: 'none' }}
         >
-          ver mas
+          {show ? <Icon as={HiChevronUp} w='1.2rem' h='1.2rem' /> : <Icon as={HiChevronDown} w='1.2rem' h='1.2rem' />}
         </Button>
-      </Link>
+      </Stack>
     </Stack>
   )
 }

@@ -4,7 +4,7 @@ import Card from './Card'
 
 const SliderItem = ({ content }) => {
   return (
-    <Stack direction='row' w='100%' alignItems='center' spacing={6} >
+    <Stack direction='row' h='fit-content' w='100%' alignItems='center' spacing={6} >
       {content.map((c,i) => <Card
         key={i}
         img={c.img}

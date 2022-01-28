@@ -3,7 +3,7 @@ import { Box, Stack } from '@chakra-ui/react'
 import headerBg from '../../assets/bgCompressed.jpg'
 import HeaderTitle from './HeaderTitle'
 import Border from './Border'
-import HeaderForm from './HeaderForm'
+import HeaderForm from './headerForm/HeaderForm'
 import styles from './Header.module.css'
 
 const HeaderLayout = () => (
