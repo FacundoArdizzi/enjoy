@@ -1,0 +1,18 @@
+.animated {
+  position: relative;
+  top: 1vh;
+  animation-name: label; 
+  animation-timing-function: ease;
+  animation-duration: 1.5s;
+}
+
+@keyframes label {
+  0% { 
+    position: relative;
+    top: 5vh; 
+  }
+  100% { 
+    position: relative;
+    top: 1vh;
+  }
+}
