@@ -8,3 +8,16 @@
   0% { margin-left: -58vw; }
   100% { margin-left: 4vw; }
 }
+
+@media (max-width: 450px) {
+  .header {
+    animation-name: enter-header;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+  }
+
+  @keyframes enter-header {
+    0% { margin-left: -58vw; }
+    100% { margin-left: 0vw; }
+  }
+}

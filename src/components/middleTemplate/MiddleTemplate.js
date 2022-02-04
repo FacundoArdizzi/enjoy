@@ -33,12 +33,12 @@ const MiddleTemplate = () => (
         maxW={{ base: '80vw', md: '60vw'}}
         mt='3vh'
         mb='1vh'
-        textAlign='justify'
+        textAlign={{ base: 'left', md: 'justify'}}
       >No hay problema, ayudamos a miles de alumnos a preparar sus exámenes de <Link color='lightBlue' as={ReachLink} to='/first-certificate' >First Certificate</Link>, <Link color='lightBlue' as={ReachLink} to='/toefl'>TOEFL</Link>, <Link color='lightBlue' as={ReachLink} to='/toeic'>TOEIC</Link>... Nuestro idioma es el inglés y podemos ayudarte a conseguir lo que te propongas.
       </Text>
       <Text 
         mx='auto'
-        textAlign='justify'
+        textAlign={{ base: 'left', md: 'justify'}}
         maxW={{ base: '80vw', md: '60vw'}}
         fontSize={{ base: '1rem', md: '1.3rem'}}
       >Contacta con nosotros y te escribiremos para conocerte y organizar tu primera clase gratis.</Text>

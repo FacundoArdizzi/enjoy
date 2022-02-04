@@ -1,13 +1,8 @@
-import { Box, Heading, Icon, Stack } from '@chakra-ui/react'
+import { Heading, Stack } from '@chakra-ui/react'
 import React from 'react'
-import { IoIosTrendingUp } from 'react-icons/io'
 
 const HeaderTitle = () => (
-  <Stack>
-    <Box display={{ base: 'inherit', md: 'none' }} position='relative' top='5em' left='-15vw' >
-      <Icon as={IoIosTrendingUp} color='yellow' w='20em' h='20em' display={{ base: 'inherit', md: 'hidden'}}/>
-    </Box>
-    <Box position={{ base: 'relative', md: 'inherit' }} top={{ base: '-20em', md: 'inherit' }}>
+  <Stack mb={{ base: '3.5vh', md: '' }}>
       <Heading 
         as='h1'
         textTransform='capitalize'
@@ -19,7 +14,6 @@ const HeaderTitle = () => (
         fontWeight='semi-bold'
         fontSize='1.5rem'
       >Aprende inglés y prepara tu certificación con l@s mejores profesor@s</Heading>
-    </Box>
   </Stack>
 )
 

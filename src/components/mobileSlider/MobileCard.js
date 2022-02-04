@@ -6,9 +6,9 @@ import { GoLocation } from 'react-icons/go'
 
 const MobileCard = ({ img, name, location, opinion }) => {
   return (
-    <Stack w='98%' mb='2vh' minH='fit-content' >
+    <Stack w='95%' m='auto' mb='3vh' minH='fit-content' >
       <Stack 
-        w='95%'
+        w='100%'
         bg='white'
         borderRadius='md'
         boxShadow='lg'

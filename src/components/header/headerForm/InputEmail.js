@@ -19,7 +19,7 @@ const InputEmail = () => {
         id="email"
         type="email"
         name="user_email"
-        borderColor="gray.400"
+        borderColor={{ base: 'whiteAlpha.700', md:"gray.400" }}
         transition="all .4s ease"
         _hover={{ outline: "none" }}
         _focus={{

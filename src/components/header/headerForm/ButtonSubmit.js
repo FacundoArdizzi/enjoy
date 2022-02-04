@@ -6,16 +6,19 @@ const ButtonSubmit = ({ loading }) => {
     <Box w='100%' textAlign='center' >
       <Button
         type='submit'
-        bg='orange'
-        border='1.5px solid orange'
+        bg={{ base: 'transparent', md: 'orange' }}
+        border={{ base: 'transparent', md: '1.5px solid orange' }}
         borderRadius='1rem 0 1rem 0'
-        color='white'
+        color={{ base: 'white', md: 'white'}}
         mt='2.5vh'
         px='5vw'
         _focus={{ outline: 'none' }}
-        _hover={{ bg: 'transparent', color: 'orange' }}
+        _hover={{
+          base: { border: '1px solid white', borderRadius: '1rem 0 1rem 0' },
+          md: { bg: 'transparent', color: 'orange' },
+        }}
         isLoading={loading}
-        transition='all .4s ease'
+        transition={{ base: 'all 1s ease', md: 'all .4s ease'}}
       >
         Enviar
       </Button>

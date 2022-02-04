@@ -20,7 +20,7 @@ const InputPhone = () => {
         id="tel"
         type="tel"
         name="user_tel"
-        borderColor="gray.400"
+        borderColor={{ base: 'whiteAlpha.700', md:"gray.400" }}
         transition="all .4s ease"
         _hover={{ outline: "none" }}
         _focus={{

@@ -17,7 +17,7 @@ const InputName = () => {
       <FormLabel
         htmlFor="name" 
         position='relative'
-        bottom='-5vh'
+        bottom={{ base: '-4vh', md: '-5vh'}}
         className={show && styles.animated}
       >Nombre Completo</FormLabel>
       <Input

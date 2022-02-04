@@ -20,7 +20,7 @@ const InputName = () => {
         id="name"
         type="text"
         name="user_name"
-        borderColor="gray.400"
+        borderColor={{ base: 'whiteAlpha.700', md:"gray.400" }}
         transition="all .4s ease"
         _hover={{ outline: "none" }}
         _focus={{

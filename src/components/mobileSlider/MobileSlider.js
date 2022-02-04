@@ -13,12 +13,13 @@ const MobileSlider = () => {
       py='5vh'
       spacing={6}
     >
-      <Heading 
+      <Heading
+        w='90%'
         color='lightBlue'
         textAlign='center'
         fontSize='1.5rem'
       >Conoce lo que nuestros clientes piensan de nosotros</Heading>
-      <Stack justifyContent='center'>
+      <Stack>
         <Collapse in={show} px={4} pb={4} w='100%' startingHeight='30vh'>
           {opinions.map(c => <MobileCard 
             key={c.id}

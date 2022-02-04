@@ -16,7 +16,7 @@ const InputEmail = () => {
     <FormControl transition="all .5s ease">
       <FormLabel 
         position='relative'
-        bottom='-5vh'
+        bottom={{ base: '-4vh', md: '-5vh'}}
         htmlFor="email" 
         className={show && styles.animated}
       >Email</FormLabel>
