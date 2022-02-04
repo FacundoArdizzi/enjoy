@@ -25,6 +25,7 @@ const InputEmail = () => {
         onBlur={handleBlur}
         onChange={handleChange}
         value={user_email}
+        autoComplete='off'
         p={4}
         id="email"
         type="email"

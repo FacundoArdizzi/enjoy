@@ -25,6 +25,7 @@ const InputName = () => {
         onChange={handleChange}
         onBlur={handleBlur}
         value={user_name}
+        autoComplete='off'
         p={4}
         transition="all .5s ease"
         id="name"

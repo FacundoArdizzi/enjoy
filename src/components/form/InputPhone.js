@@ -25,6 +25,7 @@ const InputPhone = () => {
         onChange={handleChange}
         onBlur={handleBlur}
         value={user_tel}
+        autoComplete='off'
         p={4}
         id="tel"
         type="tel"
