@@ -6,7 +6,7 @@ import { Stack, Text, Heading } from '@chakra-ui/react'
 import InputName from './InputName'
 import InputEmail from './InputEmail'
 import InputPhone from './InputPhone'
-import ButtonSubmit from '../header/headerForm/ButtonSubmit'
+import ButtonSubmit from './ButtonSubmit'
 import swal from 'sweetalert'
 
 const Form = () => {
